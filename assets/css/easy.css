@@ -23,3 +23,42 @@ header.sub2{
   margin-bottom: 10px;
   color: #ffffff;
 }
+/* everything above this is just the header*/
+
+/*everything below is has to do with the flippy square.*/
+/*flippy*/
+input {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  color: rgba(255,255,255,0);
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  vertical-align:middle;
+
+  transition: background 1s, -webkit-transform 1s; color: 1s;
+
+}
+
+input:checked +.card{
+  background:lightcoral;
+  color: rgba(255,255,255,1);
+  -webkit-transform: rotatez(180deg);
+  -webkit-transform: rotateX(180deg);
+  -webkit-transform: rotatey(180deg);
+}
+/*end flippy*/
+
+section.row{
+  display: inline;
+}
+.flipper{
+  display: inline;
+}
