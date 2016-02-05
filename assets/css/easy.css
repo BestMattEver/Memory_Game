@@ -1,5 +1,7 @@
 body{
   background-color: #3F51B5;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 h1{
@@ -8,7 +10,9 @@ h1{
   color: #ffffff;
 }
 header {
-  margin-left: 35%;
+  margin-left: 33%;
+  display: block;
+
 }
 header.sub{
   display: inline;
@@ -19,7 +23,7 @@ header.sub2{
   display: inline;
   float: right;
   font-family: sans-serif;
-  margin-right:5%;
+  margin-right:10%;
   margin-bottom: 10px;
   color: #ffffff;
 }
@@ -28,27 +32,29 @@ header.sub2{
 /*everything below is has to do with the flippy square.*/
 /*flippy*/
 input {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: none;
+
 }
 
 .card {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: steelblue;
   color: rgba(255,255,255,0);
   text-align: center;
   display: inline-block;
-  border-radius: 10px;
-  vertical-align:middle;
+  border-radius: 15px;
+  padding-top:40px;
+  box-sizing: border-box;
 
   transition: background 1s, -webkit-transform 1s; color: 1s;
 
 }
 
 input:checked +.card{
-  background:lightcoral;
+  background:rgb(0, 155, 221);
   color: rgba(255,255,255,1);
   -webkit-transform: rotatez(180deg);
   -webkit-transform: rotateX(180deg);
@@ -56,9 +62,17 @@ input:checked +.card{
 }
 /*end flippy*/
 
+.card:hover{
+  background: rgb(148, 186, 203);
+}
+
 section.row{
-  display: inline;
+  display: block;
+  margin-top: 4px;
+  margin-left: 25px;
+  width: 1000px;
 }
 .flipper{
   display: inline;
+  white-space:nowrap;
 }
