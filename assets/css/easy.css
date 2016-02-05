@@ -49,8 +49,7 @@ input {
   padding-top:40px;
   box-sizing: border-box;
 
-  transition: background 1s, -webkit-transform 1s; color: 1s;
-
+  transition: background .5s, -webkit-transform .5s; color: .5s;
 }
 
 input:checked +.card{
